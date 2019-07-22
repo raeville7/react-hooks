@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import UseState from './UseState';
+import UseEffect from './UseEffect';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         </a>
       </header> */}
       <UseState />
+      <UseEffect />
     </div>
   );
 }
