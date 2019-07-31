@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import UseState from './UseState';
 import UseEffect from './UseEffect';
+import UseRef from './UseRef';
 
 function App() {
   return (
@@ -21,8 +21,9 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <UseState />
-      <UseEffect />
+      <div className="component"><UseState /></div>
+      <div className="component"><UseEffect /></div>
+      <div className="component"><UseRef /></div>
     </div>
   );
 }
