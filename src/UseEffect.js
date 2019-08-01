@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 function LifecycleDemo() {
-    // It takes a function
     useEffect(() => {
       // This gets called after every render, by default
       // (the first one, and every one after that)
