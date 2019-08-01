@@ -3,6 +3,7 @@ import './App.css';
 import UseState from './UseState';
 import UseEffect from './UseEffect';
 import UseRef from './UseRef';
+import UseReducer from './UseReducer';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <div className="component"><UseState /></div>
       <div className="component"><UseEffect /></div>
       <div className="component"><UseRef /></div>
+      <div className="component"><UseReducer /></div>
     </div>
   );
 }

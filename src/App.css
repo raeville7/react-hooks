@@ -35,8 +35,8 @@
 .component {
   border: 1px solid grey;
   background-color: #eee;
-  padding: 1rem;
-  width: 80%;
   text-align: center;
-  margin: 0 auto;
+  width: 49%;
+  height: 180px;
+  float: left;
 }
