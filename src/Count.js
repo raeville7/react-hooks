@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import {DateContext} from './DateContext';
 
-const UseState = () => {
+const Count = () => {
   const [count, setCount] = useState(20);
   const {data, date} = useContext(DateContext)
   return (
@@ -14,4 +14,4 @@ const UseState = () => {
   );
 };
 
-export default UseState;
+export default Count;

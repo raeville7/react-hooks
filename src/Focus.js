@@ -1,6 +1,6 @@
 import React, {useRef} from 'react';
 
-const UseRef = () => {
+const Focus = () => {
   //creating the ref by passing initial value null
   const nameRef = useRef(null);
   const mobileRef = useRef(null);
@@ -21,4 +21,4 @@ const UseRef = () => {
     );
 };
 
-export default UseRef;
+export default Focus;

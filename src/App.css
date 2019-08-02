@@ -37,6 +37,6 @@
   background-color: #eee;
   text-align: center;
   width: 49%;
-  height: 180px;
+  min-height: 180px;
   float: left;
 }

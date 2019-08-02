@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
+import {DateContext} from './DateContext';
+
 function LifecycleDemo() {
     useEffect(() => {
       // This gets called after every render, by default
@@ -13,7 +15,7 @@ function LifecycleDemo() {
   
     return "I'm a lifecycle demo";
   }
-const UseEffect = () => {
+const Toggle = () => {
   // Set up another piece of state to keep track of
   // whether the LifecycleDemo is shown or hidden
   const [mounted, setMounted] = useState(true);
@@ -23,12 +25,15 @@ const UseEffect = () => {
   // LifecycleDemo, so you can see its cleanup function
   // being called.
   const toggle = () => setMounted(!mounted);
+
+  const {data, date} = useContext(DateContext)
     return (
         <div>
-          <h3>UseEffect</h3>
+          <h3>{data} UseEffect</h3>
           <button onClick={toggle}>Show/Hide LifecycleDemo</button>
           <div>{mounted && <LifecycleDemo/>}</div>
+          <p>{date}</p>
         </div>
     );
 };
-export default UseEffect;
+export default Toggle;
